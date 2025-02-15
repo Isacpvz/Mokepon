@@ -499,6 +499,10 @@ function obtenerObjetoMascota(){
 }
 
 function revisarColision(enemigo){
+    if(enemigo.x == undefined || enemigo.y == undefined){
+        return
+    }
+
     const arribaEnemigo = enemigo.y
     const abajoEnemigo = enemigo.y + enemigo.alto
     const derechaEnemigo = enemigo.x + enemigo.ancho
