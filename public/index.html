@@ -23,11 +23,11 @@
         <section id="ver-mapa">
             <h2 class="subtitulo">Recorre el mapa con tu Mokepon</h2>
             <canvas id="mapa"></canvas>
-            <button onmouseup="detenerMovimiento()"  ontouchstart="detenerMovimiento()" onmousedown="moverArriba()" ontouchend="moverArriba()">Arriba</button>
+            <button onmouseup="detenerMovimiento()"  ontouchstart="moverArriba()" onmousedown="moverArriba()" ontouchend="detenerMovimiento()">Arriba</button>
             <div>
-                <button onmouseup="detenerMovimiento()"  ontouchstart="detenerMovimiento()" onmousedown="moverIzquierda()" ontouchend="moverIzquierda()">Izquierda</button>
-                <button onmouseup="detenerMovimiento()"  ontouchstart="detenerMovimiento()" onmousedown="moverAbajo()" ontouchend="moverAbajo()">Abajo</button>
-                <button onmouseup="detenerMovimiento()"  ontouchstart="detenerMovimiento()" onmousedown="moverDerecha()" ontouchend="moverDerecha()">Derecha</button>
+                <button onmouseup="detenerMovimiento()"  ontouchstart="moverIzquierda()" onmousedown="moverIzquierda()" ontouchend="detenerMovimiento()">Izquierda</button>
+                <button onmouseup="detenerMovimiento()"  ontouchstart="moverAbajo()" onmousedown="moverAbajo()" ontouchend="detenerMovimiento()">Abajo</button>
+                <button onmouseup="detenerMovimiento()"  ontouchstart="moverDerecha()" onmousedown="moverDerecha()" ontouchend="detenerMovimiento()">Derecha</button>
             </div>
         </section>
 
