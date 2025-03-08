@@ -407,7 +407,7 @@ function pintarCanva(){
 }
 
 function enviarPosicion(x,y){
-    fetch(`http://192.168.100.63:8080/mokepon/${jugadorId}/posicion`, {
+    fetch(`http://172.31.93.75:8080/mokepon/${jugadorId}/posicion`, {
         method: "post",
         headers: {
             "Content-Type": "application/json"
