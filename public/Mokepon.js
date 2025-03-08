@@ -1,3 +1,4 @@
+//efrain
 const sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
 const sectionReiniciar = document.getElementById('boton-reiniciar')
 const botonMascotaJugador = document.getElementById('boton-mascota')
