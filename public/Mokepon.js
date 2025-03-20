@@ -153,7 +153,7 @@ sectionReiniciar.style.display= 'none'
 unirseAlJuego()
 
 function unirseAlJuego(){
-    fetch("http://172.31.93.75:8080/unirse")
+    fetch("http://52.90.237.136:8080/unirse")
     .then(function (res){
         if(res.ok){
             res.text()
@@ -193,7 +193,7 @@ function seleccionarMascotaJugador(){
 }
 
 function seleccionarMokepon(mascotaJugador){
-    fetch(`http://172.31.93.75:8080/mokepon/${jugadorId}`,{
+    fetch(`http://52.90.237.136:8080/mokepon/${jugadorId}`,{
         method: "post",
         headers: {
             "Content-type": "application/json"
@@ -255,7 +255,7 @@ function secuenciaAtaque(){
 }
 
 function enviarAtaques(){
-    fetch(`http://192.168.100.63:8080/mokepon/${jugadorId}/ataques`, {
+    fetch(`http://52.90.237.136:8080/mokepon/${jugadorId}/ataques`, {
         method: "post",
         headers:{
             "Content-Type": "application/json"
@@ -269,7 +269,7 @@ function enviarAtaques(){
 }
 
 function obtenerAtaques(){
-    fetch(`http://172.31.93.75:8080/mokepon/${enemigoId}/ataques`)
+    fetch(`http://52.90.237.136:8080/mokepon/${enemigoId}/ataques`)
     .then(function (res){
         if (res.ok){
             res.json()
@@ -408,7 +408,7 @@ function pintarCanva(){
 }
 
 function enviarPosicion(x,y){
-    fetch(`http://172.31.93.75:8080/mokepon/${jugadorId}/posicion`, {
+    fetch(`http://52.90.237.136:8080/mokepon/${jugadorId}/posicion`, {
         method: "post",
         headers: {
             "Content-Type": "application/json"
