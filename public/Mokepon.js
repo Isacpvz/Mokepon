@@ -153,7 +153,7 @@ sectionReiniciar.style.display= 'none'
 unirseAlJuego()
 
 function unirseAlJuego(){
-    fetch("http://192.168.100.63:8080/unirse")
+    fetch("http://172.31.93.75:8080/unirse")
     .then(function (res){
         if(res.ok){
             res.text()
@@ -193,7 +193,7 @@ function seleccionarMascotaJugador(){
 }
 
 function seleccionarMokepon(mascotaJugador){
-    fetch(`http://192.168.100.63:8080/mokepon/${jugadorId}`,{
+    fetch(`http://172.31.93.75:8080/mokepon/${jugadorId}`,{
         method: "post",
         headers: {
             "Content-type": "application/json"
@@ -269,7 +269,7 @@ function enviarAtaques(){
 }
 
 function obtenerAtaques(){
-    fetch(`http://192.168.100.63:8080/mokepon/${enemigoId}/ataques`)
+    fetch(`http://172.31.93.75:8080/mokepon/${enemigoId}/ataques`)
     .then(function (res){
         if (res.ok){
             res.json()
